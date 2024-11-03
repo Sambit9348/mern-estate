@@ -1,4 +1,4 @@
-import {FaSearch} from 'react-icons/fa';
+import { FaSearch } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
@@ -32,14 +32,13 @@ export default function Header() {
             {currentUser ? (
               <img
                 className='rounded-full h-7 w-7 object-cover'
-                src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-                alt='profile'
+                src={currentUser.avatar}
               />
             ) : (
               <li className=' text-slate-700 hover:underline'> Sign in</li>
             )}
           </Link>
-
+          
         </ul>
         </div>
     </header>
