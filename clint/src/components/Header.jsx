@@ -32,7 +32,7 @@ export default function Header() {
             {currentUser ? (
               <img
                 className='rounded-full h-7 w-7 object-cover'
-                src={currentUser.avatar}
+                src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
               />
             ) : (
               <li className=' text-slate-700 hover:underline'> Sign in</li>
